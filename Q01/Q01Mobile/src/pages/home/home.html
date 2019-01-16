@@ -10,15 +10,9 @@
   <h3 text-center>
     คิดดอกเบี้ยเงินกู้
   </h3>
-  <ion-list>
-    <ion-item>
-      <ion-label floating>จำนวนเงิน</ion-label>
-      <ion-input type="number"></ion-input>
+  <ion-item>
+      <ion-label floating>ใส่จำนวนดอกเบี้ย</ion-label>
+      <ion-input type="number" [(ngModel)]="doknaja"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label floating>จำนวนปี</ion-label>
-      <ion-input type="number"></ion-input>
-    </ion-item>
-  </ion-list>
-  <button ion-button block (click)="go()">ยืนยัน</button>
+  <button ion-button block (click)="go(doknaja)">ยืนยัน</button>
 </ion-content>

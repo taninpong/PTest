@@ -14,6 +14,19 @@
 
 
 <ion-content padding>
+  <ion-label>จำนวนดอกเบี้ย คือ {{data}}</ion-label>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>จำนวนเงิน</ion-label>
+      <ion-input type="number" [(ngModel)]="salary"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>จำนวนปี</ion-label>
+      <ion-input type="number" [(ngModel)]="year"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="salarydok()">คำนวณดอกเบี้ย</button>
+  <br>
   <ion-grid>
     <ion-row>
       <ion-col col-3>ปี </ion-col>
@@ -21,11 +34,11 @@
       <ion-col col-3>ค่าดอกเบี้ย</ion-col>
       <ion-col col-3>ยอดที่ต้องชำระ</ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col col-3>ปีที่ 1 </ion-col>
-      <ion-col col-3>10000 </ion-col>
-      <ion-col col-3>1200</ion-col>
-      <ion-col col-3>11200</ion-col>
+    <ion-row *ngFor="let item of datadok">
+      <ion-col col-3>ปีที่ {{item.year}} </ion-col>
+      <ion-col col-3>{{item.salary}} </ion-col>
+      <ion-col col-3>{{item.dok}} %</ion-col>
+      <ion-col col-3>{{item.total}}</ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

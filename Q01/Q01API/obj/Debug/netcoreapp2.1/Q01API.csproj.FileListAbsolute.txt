@@ -1,0 +1,14 @@
+C:\PTest\Q01\Q01API\bin\Debug\netcoreapp2.1\Q01API.dll
+C:\PTest\Q01\Q01API\bin\Debug\netcoreapp2.1\Q01API.deps.json
+C:\PTest\Q01\Q01API\bin\Debug\netcoreapp2.1\Q01API.runtimeconfig.json
+C:\PTest\Q01\Q01API\bin\Debug\netcoreapp2.1\Q01API.runtimeconfig.dev.json
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.csproj.CoreCompileInputs.cache
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.RazorAssemblyInfo.cache
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.RazorAssemblyInfo.cs
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.AssemblyInfoInputs.cache
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.AssemblyInfo.cs
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.RazorTargetAssemblyInfo.cache
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.dll
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.pdb
+C:\PTest\Q01\Q01API\obj\Debug\netcoreapp2.1\Q01API.csprojAssemblyReference.cache
+C:\PTest\Q01\Q01API\bin\Debug\netcoreapp2.1\Q01API.pdb

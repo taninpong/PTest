@@ -8,10 +8,13 @@ import { HistoryPage } from '../history/history';
 })
 export class HomePage {
 
+  
   constructor(public navCtrl: NavController) {
-
   }
-go(){
-  this.navCtrl.push(HistoryPage);
+go(doknaja){
+  this.navCtrl.push(HistoryPage,{
+
+    data: doknaja
+  });
 }
 }
