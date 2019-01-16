@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Interest
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h3 text-center>
+    คิดดอกเบี้ยเงินกู้
+  </h3>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>จำนวนเงิน</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>จำนวนปี</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="go()">ยืนยัน</button>
 </ion-content>
