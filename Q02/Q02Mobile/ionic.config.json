@@ -1,0 +1,7 @@
+{
+  "name": "Q02Mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
