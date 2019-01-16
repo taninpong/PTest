@@ -23,11 +23,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'เพิ่มของ', component: "CreateitemPage" },
+      { title: 'หน้าแรก', component: HomePage },
       { title: 'ตระกร้า', component: "CartPage" },
     ];
-
   }
 
   initializeApp() {

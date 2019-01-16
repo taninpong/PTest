@@ -23,6 +23,10 @@ export class HomePage {
       });
   }
 
+  Additem(){
+    this.navCtrl.push("CreateitemPage");
+  }
+
   Detail(id){
     this.navCtrl.push("DetaildataPage",{
       dataid:id
