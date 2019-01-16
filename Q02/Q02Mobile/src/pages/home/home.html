@@ -8,17 +8,18 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>รายการทั้งหมด</h3>
+  <h3 text-center>รายการทั้งหมด</h3>
   <ion-grid>
     <ion-row>
       <ion-col col-8 text-center>รายการ</ion-col>
       <ion-col col-4 text-center>ราคา</ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col col-8 >ดินสอ</ion-col>
-      <ion-col col-4 text-right>5 บาท</ion-col>
+    <ion-row *ngFor="let items of item">
+      <button ion-button outline style="width: 100%; height:60px" (click)="Detail(items.id)">
+        <ion-col col-8>{{items.name}}</ion-col>
+        <ion-col col-4 text-right>{{items.price}} บาท</ion-col>
+      </button>
     </ion-row>
   </ion-grid>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>

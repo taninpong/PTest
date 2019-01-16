@@ -5,8 +5,10 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>cart</ion-title>
   </ion-navbar>
 
@@ -14,17 +16,38 @@
 
 
 <ion-content padding>
-  <h3>ตระกร้าของฉัน</h3>
+  <h3 text-center>ตระกร้าของฉัน</h3>
   <ion-grid>
     <ion-row>
-      <ion-col col-6 text-center>รายการ</ion-col>
-      <ion-col col-3 text-center>จำนวน</ion-col>
-      <ion-col col-3 text-center>ราคา</ion-col>
+      <ion-col col-3>รายการ</ion-col>
+      <ion-col col-3 text-right>จำนวน</ion-col>
+      <ion-col col-3 text-right>ราคา</ion-col>
+      <ion-col col-3 text-right>ยอดรวม</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-6>ดินสอ</ion-col>
+      <ion-col col-3>ดินสอ</ion-col>
       <ion-col col-3 text-right>5 บาท</ion-col>
       <ion-col col-3 text-right>5 บาท</ion-col>
+      <ion-col col-3 text-right>25 บาท</ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6 text-center>จำนวนเงินทั้งหมด</ion-col>
+          <ion-col col-6 text-center> 25 บาท</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6 text-center>ส่วดลดจาก 3 แถม 1 </ion-col>
+          <ion-col col-6 text-center> 5 บาท</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6 text-center>ยอดเงินที่ต้องจ่าย</ion-col>
+          <ion-col col-6 text-center> 20 บาท</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>

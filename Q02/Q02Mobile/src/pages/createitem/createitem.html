@@ -5,8 +5,10 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>createitem</ion-title>
   </ion-navbar>
 
@@ -14,18 +16,18 @@
 
 
 <ion-content padding>
-    <ion-list>
-        <ion-item>
-          <ion-label floating>ชื่อสินค้า</ion-label>
-          <ion-input type="text" ></ion-input>
-          <!-- [(ngModel)]="salary" -->
-        </ion-item>
-        <ion-item>
-          <ion-label floating>ราคา</ion-label>
-          <ion-input type="number" ></ion-input>
-        </ion-item>
-      </ion-list>
-      <button ion-button block (click)="createitem()">เพิ่มของ</button>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>ชื่อสินค้า</ion-label>
+      <ion-input type="text" [(ngModel)]="Name"></ion-input>
+      <!-- [(ngModel)]="salary" -->
+    </ion-item>
+    <ion-item>
+      <ion-label floating>ราคา</ion-label>
+      <ion-input type="number" [(ngModel)]="Price"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="createitem()">เพิ่มของ</button>
 
 
 </ion-content>
